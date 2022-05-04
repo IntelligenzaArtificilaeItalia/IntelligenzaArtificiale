@@ -1,11 +1,12 @@
 ###### 🚧 La libreria è ancora in fase di SVILUPPO 🚧
-#
-#
-#
+
 # Intelligenza Artificiale
-##### _La libreira python creata per neofiti e datascientist che semplifica l'analisi dati e lo sviluppo di modelli di apprendimento automatico e profondo_
+###### _La libreira python creata per neofiti e datascientist che semplifica l'analisi dati e lo sviluppo di modelli di apprendimento automatico e profondo._
+
+&nbsp;
 #
-#
+&nbsp;
+
 Intelligenza-Artificiale è l'unica libreria python MADE in ITALY che permette a qualsiasi persona di :
 
 - Leggere, Manipolare, Pulire dataset di ogni tipo
@@ -13,13 +14,13 @@ Intelligenza-Artificiale è l'unica libreria python MADE in ITALY che permette a
 - Creare in meno di 5 righe di codice modelli di ML
 - Sviluppare reti neurali
 - & molto molto altro ancora
+- ###### **richiamando i metodi in italiano !**
 
-##### **richiamando i metodi in italiano !**
+&nbsp;
 #
-#
-#
+&nbsp;
 
-##  Installazione Libreria
+#  Installazione Libreria
 
 La libreria intelligenzaartificiale richiede [PYTHON](https://PYTHON.org/) v3.6+ 
 
@@ -34,8 +35,10 @@ se invece utilizzi google colab...
 ```sh
 !pip install intelligenzaartificiale
 ```
-
-## Partizione Libreria
+&nbsp;
+#
+&nbsp;
+# Partizione Libreria
 
 Al momento abbiamo deciso di partizionare la libreria in moduli, per rendere il codice il più portabile e leggero possibile.
 
@@ -50,20 +53,23 @@ Al momento abbiamo deciso di partizionare la libreria in moduli, per rendere il 
 | Machine Learning | from intelligenzaartificiale import machinelearning as ml | creazione di modelli di apprendimento automatico
 | Deep Learning | from intelligenzaartificiale import depplearning as dl | creazione di reti neurali 
 | NLP | from intelligenzaartificiale import nlp | trattamento delle informazioni testuali 
+&nbsp;
+#
+&nbsp;
 
-# Esempi
+# Documentazione
 
 Qui sotto troverai elencati tutti i metodi della libreria con degli esempi
 
 ## _Step 1 ---_  **Modulo Dataset e BigDataset**
 Con questo modulo potrai leggere qualsiasi tipo di dataset
-#
+&nbsp;
 **Leggere un file .csv**
 ```sh
 from intelligenzaartificiale import dataset as dt
 il_mio_dataset = dt.leggi_csv("file_name.csv")
 ```
-#
+&nbsp;
 **Leggere file .csv enormi**
 ```sh
 from intelligenzaartificiale import bigdataset as bdt
@@ -75,8 +81,7 @@ bdt.salva_feather(il_mio_dataset,"nuovoFile")
 from intelligenzaartificiale import dataset as dt
 il_mio_dataset = dt.leggi_feather("nuovoFile.feather")
 ```
-
-#
+&nbsp;
 **Leggere un file excel**
 ```sh
 from intelligenzaartificiale import dataset as dt
@@ -87,28 +92,20 @@ il_mio_dataset = dt.leggi_xls("file_name.xls")
 from intelligenzaartificiale import dataset as dt
 il_mio_dataset = dt.leggi_sheet("file_name.xls","nome_foglio")
 ```
-
-#
+&nbsp;
 **Leggere un file html**
 ```sh
 from intelligenzaartificiale import dataset as dt
 il_mio_dataset = dt.leggi_html("file_name.html")
 ```
 
-#
+&nbsp;
 **Leggere un file json**
 ```sh
 from intelligenzaartificiale import dataset as dt
 il_mio_dataset = dt.leggi_json("file_name.json")
 ```
-
-#
-**Leggere un file sql**
-```sh
-from intelligenzaartificiale import dataset as dt
-il_mio_dataset = dt.leggi_sql("file_name.sql")
-```
-#
+&nbsp;
 **Carica e lavora su oltre 750+ dataset già caricati**
 ```sh
 from intelligenzaartificiale import dataset as dt
@@ -122,8 +119,7 @@ print(dt.documentazione_dataset("iris"))
 #ritorna il dataframe del dataset richiesto
 il_mio_dataset= dt.importa_dataset("iris")
 ```
-
-#
+&nbsp;
 **Ottenere informazioni di base sulle colonne**
 ```sh
 from intelligenzaartificiale import dataset as dt
@@ -131,8 +127,7 @@ il_mio_dataset = dt.leggi_csv("file_name.csv")
 print(dt.lista_colonne(il_mio_dataset))
 print(dt.tipo_colonne(il_mio_dataset))
 ```
-
-#
+&nbsp;
 **Rimuovere una o più colonne**
 ```sh
 from intelligenzaartificiale import dataset as dt
@@ -144,7 +139,7 @@ nuovo_dataset = dt.rimuovi_colonne(il_mio_dataset, colonne_inutili)
 
 ```
 
-#
+&nbsp;
 **Separare i vari tipi di dato**
 ```sh
 from intelligenzaartificiale import dataset as dt
@@ -153,15 +148,19 @@ valori_numerici = dt.numerici(il_mio_dataset)
 valori_categorici = dt.categorici(il_mio_dataset)
 valori_booleani = dt.booleani(il_mio_dataset)
 ```
+
+**Scarica degli esempi pratici**
+- ##### [Esempio Completo modulo Dataset](https://3c029f53-d5cb-4407-a287-e90c489e81e2.usrfiles.com/ugd/3c029f_667621fb03c2447380c0be19e5e79cf7.pdf)
+-  ##### [Esempio 2 Completo modulo Dataset](https://3c029f53-d5cb-4407-a287-e90c489e81e2.usrfiles.com/ugd/3c029f_023e791741564cccb9ded05475f067bb.pdf)
+
+&nbsp;
 #
-#
-#
-#
-#
+&nbsp;
+
 ## _Step 2 ---_  **Modulo Statistica**
 
 Con questo modulo potrai fare statistiche, report e analisi sui tuoi dati
-#
+&nbsp;
 **Valori Nulli o Corrotti**
 ```sh
 from intelligenzaartificiale import dataset as dt
@@ -172,8 +171,7 @@ print(st.valori_nan(il_mio_dataset))
 print(st.percentuale_nan(il_mio_dataset))
 #nel modulo preprocessing vedremmo come eliminare o sostituire i valori null o corrotti
 ```
-
-#
+&nbsp;
 **Statistiche di base**
 ```sh
 from intelligenzaartificiale import dataset as dt
@@ -190,8 +188,7 @@ print(st.statistiche_colonna(il_mio_dataset,"nome_colonna"))
 #contare valori unici di una specifica colonna
 print(st.conta_valori_unici(il_mio_dataset,"nome_colonna"))
 ```
-
-#
+&nbsp;
 **Statistiche di base su colonna**
 ```sh
 from intelligenzaartificiale import dataset as dt
@@ -214,8 +211,7 @@ print(st.quantile_75(il_mio_dataset,"nome_colonna"))
 print(st.min(il_mio_dataset,"nome_colonna"))
 print(st.max(il_mio_dataset,"nome_colonna"))
 ```
-
-#
+&nbsp;
 **Analizzare le correlazioni**
 ```sh
 from intelligenzaartificiale import dataset as dt
@@ -238,8 +234,7 @@ print(st.correlazione_pearson(il_mio_dataset, "colonna" ,"target_colonna"))
 #classifica correlazione tra una colonna target e un altra colonna
 print(st.classifica_correlazione_colonna(il_mio_dataset, "target_colonna"))
 ```
-
-#
+&nbsp;
 **Report Automatizzati** 
 ```sh
 from intelligenzaartificiale import dataset as dt
@@ -255,15 +250,19 @@ st.report_dataset(il_mio_dataset)
 st.apri_dataframe_nel_browser(il_mio_dataset)
 #Ti consigliamo viviamente di provare questa funzione sul tuo set di dati
 ```
+&nbsp;
+**Scarica degli esempi pratici**
+- ##### [Esempio Completo modulo Statistica](https://3c029f53-d5cb-4407-a287-e90c489e81e2.usrfiles.com/ugd/3c029f_c15e0aa70e9c46c388730d23e0c91ea3.pdf)
 
+
+&nbsp;
 #
-#
-#
+&nbsp;
 
 ## _Step 3 ---_  **Modulo PreProcessing**
 
 Con questo modulo potrai pulire, manipolare, standardizzare e scalare i tuoi dati
-#
+&nbsp;
 **Gestire Nulli o Corrotti**
 
 ```sh
@@ -282,7 +281,7 @@ il_mio_dataset["colonna"] = pp.sostituisci_nan_media(il_mio_dataset,"colonna")
 il_mio_dataset["colonna"] = pp.sostituisci_nan_frequenti(il_mio_dataset,"colonna")
 
 ```
-#
+&nbsp;
 **Gestire gli outliers**
 ```sh
 from intelligenzaartificiale import dataset as dt
@@ -297,7 +296,7 @@ il_mio_dataset["colonna"] = pp.rimuovi_outliers(il_mio_dataset,"colonna")
 il_mio_dataset["colonna"] = pp.rimuovi_outliers_nan(il_mio_dataset,"colonna")
 
 ```
-#
+&nbsp;
 **Gestire variabili testuali e categoriche**
 ```sh
 from intelligenzaartificiale import dataset as dt
@@ -318,7 +317,7 @@ il_mio_dataset["nuova_colonna"] = pp.onehot_encoding(il_mio_dataset,"colonna")
 il_mio_dataset = dt.rimuovi_colonna(il_mio_dataset, "colonna")
 
 ```
-#
+&nbsp;
 **Normalizzare i dati**
 ```sh
 from intelligenzaartificiale import dataset as dt
@@ -341,13 +340,17 @@ il_mio_dataset["colonna"] = pp.standardizza_colonne(il_mio_dataset,"colonna")
 # dividi i dati in test e train
 X_train, X_test, y_train, y_test = pp.dividi_train_test(il_mio_dataset, "target", 0.25 )
 ```
+&nbsp;
+**Scarica degli esempi pratici**
+- ##### [Esempio Completo modulo PreProcessing](https://3c029f53-d5cb-4407-a287-e90c489e81e2.usrfiles.com/ugd/3c029f_a996ef902fca480da70b5cc5ed4b66bf.pdf)
+
+&nbsp;
 #
-#
-#
+&nbsp;
 ## _Step 3.1 ---_  **Modulo Text-PreProcessing**
 
 Con questo modulo potrai pulire, manipolare, standardizzare e scalare i tuoi dati Testuali
-#
+&nbsp;
 **Pulizia di Base**
 
 ```sh
@@ -371,7 +374,7 @@ il_mio_dataset["colonna"] = tpp.rimuovi_caratteri_speciali(il_mio_dataset,"colon
 #rimuovi stopwords
 il_mio_dataset["colonna"] = tpp.rimuovi_stopwords(il_mio_dataset,"colonna", "english")
 ```
-#
+&nbsp;
 **Tokenizzazione e vettorizzazione del testo**
 
 ```sh
@@ -391,7 +394,7 @@ il_mio_dataset["testo_tok"] = tpp.tokenizza_testo(il_mio_dataset,"testo_email")
 
 ```
 
-#
+&nbsp;
 **Altre funzioni**
 
 ```sh
@@ -407,14 +410,17 @@ il_mio_dataset["wordbags"] = tpp.bag_of_words(il_mio_dataset,"testo_email")
 crea_wordcloud(il_mio_dataset,"testo_email")
 
 ```
+&nbsp;
+**Scarica degli esempi pratici**
+- ##### [Esempio Completo modulo Text-PreProcessing](https://3c029f53-d5cb-4407-a287-e90c489e81e2.usrfiles.com/ugd/3c029f_1313f3bacdc1410e95f45511bbdf9d52.pdf)
+&nbsp;
 #
-#
-#
+&nbsp;
 ## _Step 4 ---_  **Modulo Visualizzazione**
 
 Con questo modulo potrai visualizzare e creare grafici sui tuoi dati molto velocemente
 
-#
+&nbsp;
 **Creare Grafici**
 
 ```sh
@@ -440,7 +446,7 @@ vz.grafico_hist(il_mio_dataset,"acquisti_prodotto_A","acquisti_prodotto_B")
 
 ```
 
-#
+&nbsp;
 **Grafici Automattizati**
 
 ```sh
@@ -454,8 +460,7 @@ st.report_dataset(il_mio_dataset)
 st.apri_dataframe_nel_browser(il_mio_dataset)
 
 ```
-
-#
+&nbsp;
 **Grafici 3d**
 
 ```sh
@@ -468,9 +473,12 @@ il_mio_dataset = dt.leggi_csv("file_name.csv")
 vz.grafico_3d(il_mio_dataset, "spesa", "sesso", "reddito")
 
 ```
+&nbsp;
+**Scarica degli esempi pratici**
+- ##### [Esempio Completo modulo Visualizzazione](https://3c029f53-d5cb-4407-a287-e90c489e81e2.usrfiles.com/ugd/3c029f_28aae9fe099148f6a24c9eda42573878.pdf)
+&nbsp;
 #
-#
-#
+&nbsp;
 ## _Step 5 ---_  **Modulo Apprendimento Automatico**
 
 Con questo modulo potrai :
@@ -480,7 +488,7 @@ Con questo modulo potrai :
 - Fare previsioni su nuovi dati con il tuo modello
 - & molto molto altro ancora
 
-#
+&nbsp;
 **Scoprire l'algoritmo più performante**
 ```sh
 from intelligenzaartificiale import dataset as dt
@@ -499,7 +507,7 @@ modello = ml.performance_modelli_regressione(il_mio_dataset, colonne_x, target_r
 modello = ml.performance_modelli_classificazione(il_mio_dataset, colonne_x, target_cla)
 
 ```
-#
+&nbsp;
 
 **Creare il modelli di regressione [SEMPLICE]**
 ```sh
@@ -525,8 +533,7 @@ modello10 = ml.modello_lasso(il_mio_dataset, colonne_x, target_reg)
 modello11 = ml.modello_ridge(il_mio_dataset, colonne_x, target_reg)
 
 ```
-#
-
+&nbsp;
 **Creare il modelli di classificazione [SEMPLICE]**
 ```sh
 from intelligenzaartificiale import dataset as dt
@@ -547,7 +554,7 @@ modello6 = ml.classificatore_naivebayes(il_mio_dataset, colonne_x, target_cla)
 modello7 = ml.classificatore_svm(il_mio_dataset, colonne_x, target_cla)
 
 ```
-#
+&nbsp;
 **Valutare, Prevedere, Salvare e Caricare un modello**
 ```sh
 from intelligenzaartificiale import dataset as dt
@@ -573,7 +580,7 @@ previsioni = ml.predizione_y(modello1,nuovo_dataset)
 ml.salva_modello(modello1,"nome_modello")
 ml.carica_modello("nome_modello")
 ```
-#
+&nbsp;
 **Creare modelli avanzati [AVANZATO]**
 ```sh
 from intelligenzaartificiale import dataset as dt
@@ -622,21 +629,23 @@ modello = ml.modello_ridge_avanzato(df, lista_colonne_x, colonna_y, alpha=1.0, f
 modello = ml.modello_lasso_avanzato(df, lista_colonne_x, colonna_y, alpha=1.0, fit_intercept=True, normalize=False, precompute='auto', copy_X=True, max_iter=1000, tol=0.0001, warm_start=False, positive=False, random_state=None, selection='cyclic')
 
 ```
+&nbsp;
+**Scarica degli esempi pratici**
+- ##### [Esempio Completo modulo Machine Learning](https://3c029f53-d5cb-4407-a287-e90c489e81e2.usrfiles.com/ugd/3c029f_574ed01c91a441d69b51da47209b8b1b.pdf)
+&nbsp;
 #
-#
-#
+&nbsp;
 ## _Step 6 ---_  **Modulo Apprendimento Profondo**
 ###### 🚧 Questa parte della libreria è ancora in fase di SVILUPPO 🚧
+&nbsp;
 #
-#
-#
+&nbsp;
 ## _Step7 ---_  **Modulo NLP**
 ###### 🚧 Questa parte della libreria è ancora in fase di SVILUPPO 🚧
+&nbsp;
 #
-#
-#
-## Licenza
-**MIT**
+&nbsp;
+# Licenza **MIT**
 
-**© Copyright 2020-2022 Intelligenza Artificiale Italia!**
+**© Copyright 2020-2022 [Intelligenza Artificiale Italia](intelligenzaartificialeitalia.net)**
 
